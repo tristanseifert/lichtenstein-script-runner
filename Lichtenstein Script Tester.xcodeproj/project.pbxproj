@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6AD5FB191FFD867B0006DDF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB181FFD867B0006DDF5 /* AppDelegate.m */; };
+		6AD5FB1B1FFD867B0006DDF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5FB1A1FFD867B0006DDF5 /* Assets.xcassets */; };
+		6AD5FB1E1FFD867B0006DDF5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5FB1C1FFD867B0006DDF5 /* MainMenu.xib */; };
+		6AD5FB211FFD867B0006DDF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB201FFD867B0006DDF5 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6AD5FB141FFD867B0006DDF5 /* Lichtenstein Script Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lichtenstein Script Tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AD5FB171FFD867B0006DDF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6AD5FB181FFD867B0006DDF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6AD5FB1A1FFD867B0006DDF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AD5FB1D1FFD867B0006DDF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6AD5FB1F1FFD867B0006DDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AD5FB201FFD867B0006DDF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6AD5FB221FFD867B0006DDF5 /* Lichtenstein_Script_Tester.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lichtenstein_Script_Tester.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AD5FB111FFD867B0006DDF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AD5FB0B1FFD867B0006DDF5 = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB161FFD867B0006DDF5 /* Lichtenstein Script Tester */,
+				6AD5FB151FFD867B0006DDF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AD5FB151FFD867B0006DDF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB141FFD867B0006DDF5 /* Lichtenstein Script Tester.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AD5FB161FFD867B0006DDF5 /* Lichtenstein Script Tester */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB171FFD867B0006DDF5 /* AppDelegate.h */,
+				6AD5FB181FFD867B0006DDF5 /* AppDelegate.m */,
+				6AD5FB1A1FFD867B0006DDF5 /* Assets.xcassets */,
+				6AD5FB1C1FFD867B0006DDF5 /* MainMenu.xib */,
+				6AD5FB1F1FFD867B0006DDF5 /* Info.plist */,
+				6AD5FB201FFD867B0006DDF5 /* main.m */,
+				6AD5FB221FFD867B0006DDF5 /* Lichtenstein_Script_Tester.entitlements */,
+			);
+			path = "Lichtenstein Script Tester";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AD5FB131FFD867B0006DDF5 /* Lichtenstein Script Tester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AD5FB251FFD867B0006DDF5 /* Build configuration list for PBXNativeTarget "Lichtenstein Script Tester" */;
+			buildPhases = (
+				6AD5FB101FFD867B0006DDF5 /* Sources */,
+				6AD5FB111FFD867B0006DDF5 /* Frameworks */,
+				6AD5FB121FFD867B0006DDF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lichtenstein Script Tester";
+			productName = "Lichtenstein Script Tester";
+			productReference = 6AD5FB141FFD867B0006DDF5 /* Lichtenstein Script Tester.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AD5FB0C1FFD867B0006DDF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Tristan Seifert";
+				TargetAttributes = {
+					6AD5FB131FFD867B0006DDF5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6AD5FB0F1FFD867B0006DDF5 /* Build configuration list for PBXProject "Lichtenstein Script Tester" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AD5FB0B1FFD867B0006DDF5;
+			productRefGroup = 6AD5FB151FFD867B0006DDF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AD5FB131FFD867B0006DDF5 /* Lichtenstein Script Tester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AD5FB121FFD867B0006DDF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD5FB1B1FFD867B0006DDF5 /* Assets.xcassets in Resources */,
+				6AD5FB1E1FFD867B0006DDF5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AD5FB101FFD867B0006DDF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD5FB211FFD867B0006DDF5 /* main.m in Sources */,
+				6AD5FB191FFD867B0006DDF5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6AD5FB1C1FFD867B0006DDF5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AD5FB1D1FFD867B0006DDF5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AD5FB231FFD867B0006DDF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6AD5FB241FFD867B0006DDF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6AD5FB261FFD867B0006DDF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Lichtenstein Script Tester/Lichtenstein_Script_Tester.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8QDQ246B94;
+				INFOPLIST_FILE = "Lichtenstein Script Tester/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.tseifert.Lichtenstein-Script-Tester";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6AD5FB271FFD867B0006DDF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Lichtenstein Script Tester/Lichtenstein_Script_Tester.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8QDQ246B94;
+				INFOPLIST_FILE = "Lichtenstein Script Tester/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.tseifert.Lichtenstein-Script-Tester";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AD5FB0F1FFD867B0006DDF5 /* Build configuration list for PBXProject "Lichtenstein Script Tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AD5FB231FFD867B0006DDF5 /* Debug */,
+				6AD5FB241FFD867B0006DDF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AD5FB251FFD867B0006DDF5 /* Build configuration list for PBXNativeTarget "Lichtenstein Script Tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AD5FB261FFD867B0006DDF5 /* Debug */,
+				6AD5FB271FFD867B0006DDF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AD5FB0C1FFD867B0006DDF5 /* Project object */;
+}
