@@ -1,0 +1,3 @@
+[submodule "Dependencies/NSTextView-LineNumberView"]
+	path = Dependencies/NSTextView-LineNumberView
+	url = git@github.com:yichizhang/NSTextView-LineNumberView.git

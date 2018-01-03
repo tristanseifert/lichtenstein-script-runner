@@ -7,21 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6AD5FB191FFD867B0006DDF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB181FFD867B0006DDF5 /* AppDelegate.m */; };
+		6AD5FB191FFD867B0006DDF5 /* TSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB181FFD867B0006DDF5 /* TSAppDelegate.m */; };
 		6AD5FB1B1FFD867B0006DDF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5FB1A1FFD867B0006DDF5 /* Assets.xcassets */; };
 		6AD5FB1E1FFD867B0006DDF5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5FB1C1FFD867B0006DDF5 /* MainMenu.xib */; };
-		6AD5FB211FFD867B0006DDF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB201FFD867B0006DDF5 /* main.m */; };
+		6AD5FB211FFD867B0006DDF5 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB201FFD867B0006DDF5 /* main.mm */; };
+		6AD5FB3B1FFD8CAD0006DDF5 /* TSScriptRunner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB3A1FFD8CAD0006DDF5 /* TSScriptRunner.mm */; };
+		6AD5FB421FFD8D5D0006DDF5 /* Routine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB401FFD8D5D0006DDF5 /* Routine.cpp */; };
+		6AD5FB441FFD8EA70006DDF5 /* libglog.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD5FB431FFD8EA70006DDF5 /* libglog.0.dylib */; };
+		6AD5FB451FFD8F200006DDF5 /* scriptstdstring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB3D1FFD8CCF0006DDF5 /* scriptstdstring.cpp */; };
+		6AD5FB461FFD8F230006DDF5 /* scriptstdstring_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB3F1FFD8CCF0006DDF5 /* scriptstdstring_utils.cpp */; };
+		6AD5FB471FFD8F2F0006DDF5 /* scriptarray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB2E1FFD87FB0006DDF5 /* scriptarray.cpp */; };
+		6AD5FB481FFD8F320006DDF5 /* scriptbuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB311FFD87FB0006DDF5 /* scriptbuilder.cpp */; };
+		6AD5FB491FFD8F350006DDF5 /* scriptdictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB341FFD87FB0006DDF5 /* scriptdictionary.cpp */; };
+		6AD5FB4A1FFD90740006DDF5 /* libangelscript.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD5FB2C1FFD87D10006DDF5 /* libangelscript.a */; };
+		A972B128EE078373932E9A32 /* libPods-Lichtenstein Script Tester.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 764DEA864638BBAADCB3920E /* libPods-Lichtenstein Script Tester.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6AD5FB141FFD867B0006DDF5 /* Lichtenstein Script Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lichtenstein Script Tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AD5FB171FFD867B0006DDF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6AD5FB181FFD867B0006DDF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6AD5FB171FFD867B0006DDF5 /* TSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppDelegate.h; sourceTree = "<group>"; };
+		6AD5FB181FFD867B0006DDF5 /* TSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
 		6AD5FB1A1FFD867B0006DDF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AD5FB1D1FFD867B0006DDF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		6AD5FB1F1FFD867B0006DDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6AD5FB201FFD867B0006DDF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6AD5FB221FFD867B0006DDF5 /* Lichtenstein_Script_Tester.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lichtenstein_Script_Tester.entitlements; sourceTree = "<group>"; };
+		6AD5FB201FFD867B0006DDF5 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		6AD5FB2C1FFD87D10006DDF5 /* libangelscript.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libangelscript.a; path = angelscript/angelscript/lib/libangelscript.a; sourceTree = SOURCE_ROOT; };
+		6AD5FB2E1FFD87FB0006DDF5 /* scriptarray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scriptarray.cpp; sourceTree = "<group>"; };
+		6AD5FB2F1FFD87FB0006DDF5 /* scriptarray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scriptarray.h; sourceTree = "<group>"; };
+		6AD5FB311FFD87FB0006DDF5 /* scriptbuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scriptbuilder.cpp; sourceTree = "<group>"; };
+		6AD5FB321FFD87FB0006DDF5 /* scriptbuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scriptbuilder.h; sourceTree = "<group>"; };
+		6AD5FB341FFD87FB0006DDF5 /* scriptdictionary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scriptdictionary.cpp; sourceTree = "<group>"; };
+		6AD5FB351FFD87FB0006DDF5 /* scriptdictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scriptdictionary.h; sourceTree = "<group>"; };
+		6AD5FB361FFD881B0006DDF5 /* Lichtenstein_Script_Tester.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Lichtenstein_Script_Tester.entitlements; path = "Lichtenstein Script Tester/Lichtenstein_Script_Tester.entitlements"; sourceTree = SOURCE_ROOT; };
+		6AD5FB371FFD882F0006DDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Lichtenstein Script Tester/Info.plist"; sourceTree = SOURCE_ROOT; };
+		6AD5FB391FFD8CAD0006DDF5 /* TSScriptRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSScriptRunner.h; sourceTree = "<group>"; };
+		6AD5FB3A1FFD8CAD0006DDF5 /* TSScriptRunner.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TSScriptRunner.mm; sourceTree = "<group>"; };
+		6AD5FB3D1FFD8CCF0006DDF5 /* scriptstdstring.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scriptstdstring.cpp; sourceTree = "<group>"; };
+		6AD5FB3E1FFD8CCF0006DDF5 /* scriptstdstring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scriptstdstring.h; sourceTree = "<group>"; };
+		6AD5FB3F1FFD8CCF0006DDF5 /* scriptstdstring_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scriptstdstring_utils.cpp; sourceTree = "<group>"; };
+		6AD5FB401FFD8D5D0006DDF5 /* Routine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Routine.cpp; sourceTree = "<group>"; };
+		6AD5FB411FFD8D5D0006DDF5 /* Routine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Routine.h; sourceTree = "<group>"; };
+		6AD5FB431FFD8EA70006DDF5 /* libglog.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglog.0.dylib; path = ../../../../usr/local/Cellar/glog/0.3.5_3/lib/libglog.0.dylib; sourceTree = "<group>"; };
+		7052DC85069119CC13E7EE64 /* Pods-Lichtenstein Script Tester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lichtenstein Script Tester.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lichtenstein Script Tester/Pods-Lichtenstein Script Tester.release.xcconfig"; sourceTree = "<group>"; };
+		764DEA864638BBAADCB3920E /* libPods-Lichtenstein Script Tester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lichtenstein Script Tester.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBB488AA0D2ED2E5287C21E /* Pods-Lichtenstein Script Tester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lichtenstein Script Tester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lichtenstein Script Tester/Pods-Lichtenstein Script Tester.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +57,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AD5FB4A1FFD90740006DDF5 /* libangelscript.a in Frameworks */,
+				6AD5FB441FFD8EA70006DDF5 /* libglog.0.dylib in Frameworks */,
+				A972B128EE078373932E9A32 /* libPods-Lichtenstein Script Tester.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		329CDB6E65D07BCA05290DBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFBB488AA0D2ED2E5287C21E /* Pods-Lichtenstein Script Tester.debug.xcconfig */,
+				7052DC85069119CC13E7EE64 /* Pods-Lichtenstein Script Tester.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B0D150E7EA773453D64F919 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB431FFD8EA70006DDF5 /* libglog.0.dylib */,
+				764DEA864638BBAADCB3920E /* libPods-Lichtenstein Script Tester.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6AD5FB0B1FFD867B0006DDF5 = {
 			isa = PBXGroup;
 			children = (
 				6AD5FB161FFD867B0006DDF5 /* Lichtenstein Script Tester */,
 				6AD5FB151FFD867B0006DDF5 /* Products */,
+				329CDB6E65D07BCA05290DBC /* Pods */,
+				4B0D150E7EA773453D64F919 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,16 +105,106 @@
 		6AD5FB161FFD867B0006DDF5 /* Lichtenstein Script Tester */ = {
 			isa = PBXGroup;
 			children = (
-				6AD5FB171FFD867B0006DDF5 /* AppDelegate.h */,
-				6AD5FB181FFD867B0006DDF5 /* AppDelegate.m */,
-				6AD5FB1A1FFD867B0006DDF5 /* Assets.xcassets */,
-				6AD5FB1C1FFD867B0006DDF5 /* MainMenu.xib */,
-				6AD5FB1F1FFD867B0006DDF5 /* Info.plist */,
-				6AD5FB201FFD867B0006DDF5 /* main.m */,
-				6AD5FB221FFD867B0006DDF5 /* Lichtenstein_Script_Tester.entitlements */,
+				6AD5FB281FFD86FB0006DDF5 /* Angelscript */,
+				6AD5FB381FFD8C9F0006DDF5 /* Script Runner */,
+				6AD5FB291FFD86FF0006DDF5 /* App Delegate */,
+				6AD5FB2A1FFD87110006DDF5 /* Resources */,
+				6AD5FB201FFD867B0006DDF5 /* main.mm */,
 			);
 			path = "Lichtenstein Script Tester";
 			sourceTree = "<group>";
+		};
+		6AD5FB281FFD86FB0006DDF5 /* Angelscript */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB2C1FFD87D10006DDF5 /* libangelscript.a */,
+				6AD5FB2B1FFD87C40006DDF5 /* Add-ons */,
+			);
+			path = Angelscript;
+			sourceTree = "<group>";
+		};
+		6AD5FB291FFD86FF0006DDF5 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB171FFD867B0006DDF5 /* TSAppDelegate.h */,
+				6AD5FB181FFD867B0006DDF5 /* TSAppDelegate.m */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		6AD5FB2A1FFD87110006DDF5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB361FFD881B0006DDF5 /* Lichtenstein_Script_Tester.entitlements */,
+				6AD5FB1A1FFD867B0006DDF5 /* Assets.xcassets */,
+				6AD5FB1C1FFD867B0006DDF5 /* MainMenu.xib */,
+				6AD5FB371FFD882F0006DDF5 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6AD5FB2B1FFD87C40006DDF5 /* Add-ons */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB3C1FFD8CCF0006DDF5 /* scriptstdstring */,
+				6AD5FB2D1FFD87FB0006DDF5 /* scriptarray */,
+				6AD5FB301FFD87FB0006DDF5 /* scriptbuilder */,
+				6AD5FB331FFD87FB0006DDF5 /* scriptdictionary */,
+			);
+			path = "Add-ons";
+			sourceTree = "<group>";
+		};
+		6AD5FB2D1FFD87FB0006DDF5 /* scriptarray */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB2E1FFD87FB0006DDF5 /* scriptarray.cpp */,
+				6AD5FB2F1FFD87FB0006DDF5 /* scriptarray.h */,
+			);
+			name = scriptarray;
+			path = angelscript/add_on/scriptarray;
+			sourceTree = SOURCE_ROOT;
+		};
+		6AD5FB301FFD87FB0006DDF5 /* scriptbuilder */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB311FFD87FB0006DDF5 /* scriptbuilder.cpp */,
+				6AD5FB321FFD87FB0006DDF5 /* scriptbuilder.h */,
+			);
+			name = scriptbuilder;
+			path = angelscript/add_on/scriptbuilder;
+			sourceTree = SOURCE_ROOT;
+		};
+		6AD5FB331FFD87FB0006DDF5 /* scriptdictionary */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB341FFD87FB0006DDF5 /* scriptdictionary.cpp */,
+				6AD5FB351FFD87FB0006DDF5 /* scriptdictionary.h */,
+			);
+			name = scriptdictionary;
+			path = angelscript/add_on/scriptdictionary;
+			sourceTree = SOURCE_ROOT;
+		};
+		6AD5FB381FFD8C9F0006DDF5 /* Script Runner */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB401FFD8D5D0006DDF5 /* Routine.cpp */,
+				6AD5FB411FFD8D5D0006DDF5 /* Routine.h */,
+				6AD5FB391FFD8CAD0006DDF5 /* TSScriptRunner.h */,
+				6AD5FB3A1FFD8CAD0006DDF5 /* TSScriptRunner.mm */,
+			);
+			path = "Script Runner";
+			sourceTree = "<group>";
+		};
+		6AD5FB3C1FFD8CCF0006DDF5 /* scriptstdstring */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB3D1FFD8CCF0006DDF5 /* scriptstdstring.cpp */,
+				6AD5FB3E1FFD8CCF0006DDF5 /* scriptstdstring.h */,
+				6AD5FB3F1FFD8CCF0006DDF5 /* scriptstdstring_utils.cpp */,
+			);
+			name = scriptstdstring;
+			path = angelscript/add_on/scriptstdstring;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -72,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AD5FB251FFD867B0006DDF5 /* Build configuration list for PBXNativeTarget "Lichtenstein Script Tester" */;
 			buildPhases = (
+				50D0CC115EAF458AA016A5E1 /* [CP] Check Pods Manifest.lock */,
 				6AD5FB101FFD867B0006DDF5 /* Sources */,
 				6AD5FB111FFD867B0006DDF5 /* Frameworks */,
 				6AD5FB121FFD867B0006DDF5 /* Resources */,
+				9891CEFCD48E7EA35C41A671 /* [CP] Embed Pods Frameworks */,
+				4F0C56CDC522BDA6D1D0FF23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +274,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F0C56CDC522BDA6D1D0FF23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lichtenstein Script Tester/Pods-Lichtenstein Script Tester-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50D0CC115EAF458AA016A5E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lichtenstein Script Tester-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9891CEFCD48E7EA35C41A671 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lichtenstein Script Tester/Pods-Lichtenstein Script Tester-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6AD5FB101FFD867B0006DDF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AD5FB211FFD867B0006DDF5 /* main.m in Sources */,
-				6AD5FB191FFD867B0006DDF5 /* AppDelegate.m in Sources */,
+				6AD5FB3B1FFD8CAD0006DDF5 /* TSScriptRunner.mm in Sources */,
+				6AD5FB211FFD867B0006DDF5 /* main.mm in Sources */,
+				6AD5FB421FFD8D5D0006DDF5 /* Routine.cpp in Sources */,
+				6AD5FB491FFD8F350006DDF5 /* scriptdictionary.cpp in Sources */,
+				6AD5FB451FFD8F200006DDF5 /* scriptstdstring.cpp in Sources */,
+				6AD5FB471FFD8F2F0006DDF5 /* scriptarray.cpp in Sources */,
+				6AD5FB191FFD867B0006DDF5 /* TSAppDelegate.m in Sources */,
+				6AD5FB481FFD8F320006DDF5 /* scriptbuilder.cpp in Sources */,
+				6AD5FB461FFD8F230006DDF5 /* scriptstdstring_utils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,14 +461,30 @@
 		};
 		6AD5FB261FFD867B0006DDF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFBB488AA0D2ED2E5287C21E /* Pods-Lichtenstein Script Tester.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_ENTITLEMENTS = "Lichtenstein Script Tester/Lichtenstein_Script_Tester.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8QDQ246B94;
+				GCC_PREFIX_HEADER = "Lichtenstein Script Tester/Lichtenstein.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"$(SRCROOT)/angelscript/angelscript/include\"",
+					"\"$(SRCROOT)/angelscript/add_on\"",
+					/usr/local/include,
+				);
 				INFOPLIST_FILE = "Lichtenstein Script Tester/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glog/0.3.5_3/lib,
+					"$(PROJECT_DIR)/angelscript/angelscript/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.tseifert.Lichtenstein-Script-Tester";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -274,14 +492,30 @@
 		};
 		6AD5FB271FFD867B0006DDF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7052DC85069119CC13E7EE64 /* Pods-Lichtenstein Script Tester.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_ENTITLEMENTS = "Lichtenstein Script Tester/Lichtenstein_Script_Tester.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8QDQ246B94;
+				GCC_PREFIX_HEADER = "Lichtenstein Script Tester/Lichtenstein.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"$(SRCROOT)/angelscript/angelscript/include\"",
+					"\"$(SRCROOT)/angelscript/add_on\"",
+					/usr/local/include,
+				);
 				INFOPLIST_FILE = "Lichtenstein Script Tester/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glog/0.3.5_3/lib,
+					"$(PROJECT_DIR)/angelscript/angelscript/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.tseifert.Lichtenstein-Script-Tester";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
