@@ -799,6 +799,7 @@ void effectStep() {
                         </buttonCell>
                         <connections>
                             <action selector="compile:" target="Voe-Tx-rLC" id="sFg-M9-usf"/>
+                            <binding destination="Voe-Tx-rLC" name="enabled" keyPath="self.controlsEnabled" id="YAI-yO-v5J"/>
                         </connections>
                     </button>
                 </subviews>

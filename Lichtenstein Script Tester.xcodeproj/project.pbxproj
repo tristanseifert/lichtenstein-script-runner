@@ -11,6 +11,8 @@
 		6A0A901D1FFDCC0E0061C74E /* TSPropertyValueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A901C1FFDCC0E0061C74E /* TSPropertyValueView.m */; };
 		6A4CDB211FFDD999002914C9 /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CDB1E1FFDD993002914C9 /* NoodleLineNumberMarker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6A4CDB221FFDD99D002914C9 /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CDB1F1FFDD993002914C9 /* NoodleLineNumberView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A4CDB281FFDEADB002914C9 /* scriptmath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CDB241FFDEAD5002914C9 /* scriptmath.cpp */; };
+		6A4CDB291FFDEADE002914C9 /* scriptmathcomplex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CDB261FFDEAD5002914C9 /* scriptmathcomplex.cpp */; };
 		6AD5FB191FFD867B0006DDF5 /* TSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB181FFD867B0006DDF5 /* TSAppDelegate.m */; };
 		6AD5FB1B1FFD867B0006DDF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5FB1A1FFD867B0006DDF5 /* Assets.xcassets */; };
 		6AD5FB1E1FFD867B0006DDF5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5FB1C1FFD867B0006DDF5 /* MainMenu.xib */; };
@@ -37,6 +39,10 @@
 		6A4CDB1E1FFDD993002914C9 /* NoodleLineNumberMarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberMarker.m; sourceTree = "<group>"; };
 		6A4CDB1F1FFDD993002914C9 /* NoodleLineNumberView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberView.m; sourceTree = "<group>"; };
 		6A4CDB201FFDD993002914C9 /* NoodleLineNumberView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberView.h; sourceTree = "<group>"; };
+		6A4CDB241FFDEAD5002914C9 /* scriptmath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scriptmath.cpp; sourceTree = "<group>"; };
+		6A4CDB251FFDEAD5002914C9 /* scriptmath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scriptmath.h; sourceTree = "<group>"; };
+		6A4CDB261FFDEAD5002914C9 /* scriptmathcomplex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scriptmathcomplex.cpp; sourceTree = "<group>"; };
+		6A4CDB271FFDEAD5002914C9 /* scriptmathcomplex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scriptmathcomplex.h; sourceTree = "<group>"; };
 		6AD5FB141FFD867B0006DDF5 /* Lichtenstein Script Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lichtenstein Script Tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD5FB171FFD867B0006DDF5 /* TSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppDelegate.h; sourceTree = "<group>"; };
 		6AD5FB181FFD867B0006DDF5 /* TSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +127,18 @@
 			path = "Line Numbers";
 			sourceTree = "<group>";
 		};
+		6A4CDB231FFDEAD5002914C9 /* scriptmath */ = {
+			isa = PBXGroup;
+			children = (
+				6A4CDB241FFDEAD5002914C9 /* scriptmath.cpp */,
+				6A4CDB251FFDEAD5002914C9 /* scriptmath.h */,
+				6A4CDB261FFDEAD5002914C9 /* scriptmathcomplex.cpp */,
+				6A4CDB271FFDEAD5002914C9 /* scriptmathcomplex.h */,
+			);
+			name = scriptmath;
+			path = angelscript/add_on/scriptmath;
+			sourceTree = SOURCE_ROOT;
+		};
 		6AD5FB0B1FFD867B0006DDF5 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +204,7 @@
 		6AD5FB2B1FFD87C40006DDF5 /* Add-ons */ = {
 			isa = PBXGroup;
 			children = (
+				6A4CDB231FFDEAD5002914C9 /* scriptmath */,
 				6AD5FB3C1FFD8CCF0006DDF5 /* scriptstdstring */,
 				6AD5FB2D1FFD87FB0006DDF5 /* scriptarray */,
 				6AD5FB301FFD87FB0006DDF5 /* scriptbuilder */,
@@ -392,7 +411,9 @@
 				6AD5FB471FFD8F2F0006DDF5 /* scriptarray.cpp in Sources */,
 				6AD5FB191FFD867B0006DDF5 /* TSAppDelegate.m in Sources */,
 				6AD5FB481FFD8F320006DDF5 /* scriptbuilder.cpp in Sources */,
+				6A4CDB291FFDEADE002914C9 /* scriptmathcomplex.cpp in Sources */,
 				6AD5FB461FFD8F230006DDF5 /* scriptstdstring_utils.cpp in Sources */,
+				6A4CDB281FFDEADB002914C9 /* scriptmath.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

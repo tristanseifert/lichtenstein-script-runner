@@ -15,11 +15,30 @@
 class CScriptArray;
 class CScriptDictionary;
 
-typedef struct {
-	double h;
-	double s;
-	double i;
-} HSIPixel;
+struct HSIPixel {
+public:
+	double h = 0;
+	double s = 0;
+	double i = 0;
+	
+	inline HSIPixel() {}
+	inline HSIPixel(double h, double s, double i) : h(h), s(s), i(i) { }
+	inline HSIPixel(const HSIPixel& p) {
+		this->h = p.h;
+		this->s = p.s;
+		this->i = p.i;
+	}
+	inline HSIPixel& operator=(const HSIPixel& other) noexcept {
+		// check for self assignment
+		if(this != &other) {
+			this->h = other.h;
+			this->s = other.s;
+			this->i = other.i;
+		}
+		
+		return *this;
+	}
+};
 
 class Routine {
 	public:

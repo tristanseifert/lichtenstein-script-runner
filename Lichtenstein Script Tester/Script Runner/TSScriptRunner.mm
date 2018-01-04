@@ -59,6 +59,10 @@
  * Attempts to compile the script
  */
 - (BOOL) compileScript:(NSString *) str {
+	// delete the old script
+	[self teardown];
+	
+	// compile the new script
 	const char *cStr = [str cStringUsingEncoding:NSUTF8StringEncoding];
 	std::string cppStr = std::string(cStr);
 	

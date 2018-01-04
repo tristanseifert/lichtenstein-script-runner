@@ -6,12 +6,14 @@
 #include <string>
 #include <stdexcept>
 #include <chrono>
+#include <random>
 
 #include <angelscript.h>
 #include <scriptstdstring/scriptstdstring.h>
 #include <scriptbuilder/scriptbuilder.h>
 #include <scriptarray/scriptarray.h>
 #include <scriptdictionary/scriptdictionary.h>
+#include <scriptmath/scriptmath.h>
 
 using namespace std;
 
@@ -27,6 +29,9 @@ void ASScriptPrint(string &msg);
 
 void ASHSIPixelConstructor(void *memory);
 void ASHSIPixelDestructor(void *memory);
+void ASHSIPixelListConstructor(double *list, HSIPixel *self);
+
+int ASRandomIntInRange(int min, int max);
 
 /**
  * Initializes a new routine object with the given database routine (that's how
@@ -142,6 +147,7 @@ void Routine::_setUpAngelscriptState() {
 	RegisterStdString(this->engine);
 	RegisterScriptArray(this->engine, true);
 	RegisterScriptDictionary(this->engine);
+	RegisterScriptMath(this->engine);
 
 	this->_setUpAngelscriptGlobals();
 
@@ -263,6 +269,12 @@ void Routine::_setUpAngelscriptGlobals() {
 											   asFUNCTION(ASScriptPrint),
 											   asCALL_CDECL);
    	CHECK(err >= 0) << "Couldn't register debug_print: " << err;
+	
+	// register the "rand_int" function
+	err = this->engine->RegisterGlobalFunction("int random_range(int min, int max)",
+											   asFUNCTION(ASRandomIntInRange),
+											   asCALL_CDECL);
+	CHECK(err >= 0) << "Couldn't register debug_print: " << err;
 
 	// register the HSIPixel type
 	err = this->engine->RegisterObjectType("HSIPixel", sizeof(HSIPixel),
@@ -275,11 +287,24 @@ void Routine::_setUpAngelscriptGlobals() {
 												asFUNCTION(ASHSIPixelConstructor),
 												asCALL_CDECL_OBJLAST);
 	CHECK(err >= 0) << "Couldn't register HSIPixel constructor: " << err;
+	err = this->engine->RegisterObjectBehaviour("HSIPixel", asBEHAVE_LIST_CONSTRUCT,
+												"void f(const int &in) {double, double, double}",
+												asFUNCTION(ASHSIPixelListConstructor),
+												asCALL_CDECL_OBJLAST);
+	CHECK(err >= 0) << "Couldn't register HSIPixel list constructor: " << err;
+	
 	err = this->engine->RegisterObjectBehaviour("HSIPixel", asBEHAVE_DESTRUCT,
 												"void f()",
 												asFUNCTION(ASHSIPixelDestructor),
 												asCALL_CDECL_OBJLAST);
 	CHECK(err >= 0) << "Couldn't register HSIPixel destructor: " << err;
+	
+	// register assignment operator
+	err = this->engine->RegisterObjectMethod("HSIPixel",
+											 "HSIPixel &opAssign(const HSIPixel &in)",
+											 asMETHODPR(HSIPixel,operator =, (const HSIPixel &), HSIPixel&),
+											 asCALL_THISCALL);
+	CHECK(err >= 0) << "Couldn't register HSIPixel assignment operator: " << err;
 
 
 	// register fields in the HSIPixel type
@@ -373,6 +398,24 @@ void ASHSIPixelDestructor(void *memory) {
 }
 
 /**
+ * List constructor for the HSIPixel type.
+ */
+void ASHSIPixelListConstructor(double *list, HSIPixel *self) {
+	new(self) HSIPixel(list[0], list[1], list[2]);
+}
+
+/**
+ * Returns a random number in the given range.
+ */
+int ASRandomIntInRange(int min, int max) {
+	random_device rd; // obtain a random number from hardware
+	mt19937 eng(rd()); // seed the generator
+	uniform_int_distribution<> distr(min, max); // define the range
+	
+	return distr(eng);
+}
+
+/**
  * Logging of messages from the script itself; these are logged to the global
  * logger as verbose messages.
  */
@@ -383,7 +426,7 @@ void ASScriptPrint(string &msg) {
 	asIScriptContext *ctx = asGetActiveContext();
 	line = ctx->GetLineNumber(0, &col, &section);
 
-	VLOG(1) << "[" << section << ' ' << line << ':' << col << "] " << msg;
+	LOG(INFO) << "[" << section << ' ' << line << ':' << col << "] " << msg;
 }
 
 /**
