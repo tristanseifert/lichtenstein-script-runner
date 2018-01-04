@@ -11,10 +11,9 @@
 #import "Routine.h"
 
 #include <string>
+#include <map>
 
 @interface TSScriptRunner ()
-
-- (void) initScriptContext;
 
 @property Routine *rout;
 
@@ -26,10 +25,34 @@
 @implementation TSScriptRunner
 
 /**
- * Sets up the script context.
+ * Set up some defaults.
  */
-- (void) initScriptContext {
+- (instancetype) init {
+	if(self = [super init]) {
+		self.rout = nullptr;
+	}
 	
+	return self;
+}
+
+/**
+ * When de-allocating, destroy the script context.
+ */
+- (void) dealloc {
+	if(self.rout) {
+		delete self.rout;
+	}
+}
+
+/**
+ * De-allocates the script engine.
+ */
+- (void) teardown {
+	if(self.rout) {
+		delete self.rout;
+		
+		self.rout = nullptr;
+	}
 }
 
 /**
@@ -50,6 +73,34 @@
 }
 
 /**
+ * Attaches the given buffer.
+ */
+- (void) attachBuffer:(NSMutableData *) data {
+	HSIPixel *dataPtr = (HSIPixel *) data.mutableBytes;
+	NSUInteger numElemenets = data.length / sizeof(HSIPixel);
+	DDLogVerbose(@"Attaching buffer with %lu elements", numElemenets);
+	
+	self.rout->attachBuffer(dataPtr, numElemenets);
+}
+
+/**
+ * Copies the dictionary into an std::map and stuff.
+ */
+- (void) setParams:(NSDictionary<NSString *, NSNumber *> *) params {
+	__block std::map<std::string, double> paramMap;
+	
+	[params enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSNumber *value, BOOL *stop) {
+		std::string cppKey = std::string([key cStringUsingEncoding:NSUTF8StringEncoding]);
+		double cppValue = value.doubleValue;
+		
+		paramMap[cppKey] = cppValue;
+	}];
+	
+//	DDLogVerbose(@"Set parameters to: %@", params);
+	self.rout->changeParams(paramMap);
+}
+
+/**
  * Executes a frame.
  */
 - (void) runFrame:(NSUInteger) frame {
@@ -59,7 +110,7 @@
 	self.avgExecutionTime = self.rout->getAvgExecutionTime();
 	[self didChangeValueForKey:@"avgExecutionTime"];
 	
-	DDLogVerbose(@"Frame took %f µS", self.avgExecutionTime);
+//	DDLogVerbose(@"Frame took %f µS", self.avgExecutionTime);
 }
 
 @end

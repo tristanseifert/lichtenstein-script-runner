@@ -63,6 +63,8 @@ class Routine {
 		~Routine();
 
 		void attachBuffer(HSIPixel *buf, size_t elements);
+	
+		void changeParams(std::map<std::string, double> &newParams);
 
 		void execute(int frame);
 

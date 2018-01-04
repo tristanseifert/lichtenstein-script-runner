@@ -66,6 +66,20 @@ void Routine::attachBuffer(HSIPixel *buf, size_t elements) {
 	this->_updateASBufferArray();
 }
 
+/**
+ * Updates the parameters.
+ */
+void Routine::changeParams(map<string, double> &newParams) {
+	this->params = newParams;
+	
+	// copy them into the script dict
+	this->asParams->DeleteAll();
+	
+	for(auto const& [key, val] : this->params) {
+		this->asParams->Set(key, val);
+	}
+}
+
 #pragma mark - AngelScript Stuff
 /**
  * Attaches the debugger to the angelscript context.
@@ -79,15 +93,27 @@ void Routine::_attachDebugger() {
  * to execute it.
  */
 void Routine::_cleanUpAngelscriptState() {
+	LOG(INFO) << "Cleaning up AS state";
+	
+	// release the buffer/param dict we created
+	if(this->asBuffer) {
+		this->asBuffer->Release();
+	}
+	
+	if(this->asParams) {
+		this->asParams->Release();
+	}
+	
 	// abort any currently executing scripts
 	if(this->scriptCtx) {
 		this->scriptCtx->Abort();
+		
+		this->scriptCtx->Release();
+		this->scriptCtx = nullptr;
 	}
 
 	// destroy old angelscript engine
 	if(this->engine) {
-		this->scriptCtx->Release();
-		this->scriptCtx = nullptr;
 		this->engine->ShutDownAndRelease();
 		this->engine = nullptr;
 	}
@@ -284,7 +310,7 @@ void Routine::_setUpAngelscriptGlobals() {
 	// set up a dictionary to hold properties
 	this->asParams = CScriptDictionary::Create(this->engine);
 
-	err = this->engine->RegisterGlobalProperty("dictionary @properties", &this->asBuffer);
+	err = this->engine->RegisterGlobalProperty("dictionary @properties", &this->asParams);
 	CHECK(err >= 0) << "Couldn't register properties global: " << err;
 
 	// copy all the properties from the params map

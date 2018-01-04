@@ -11,8 +11,12 @@
 @interface TSScriptRunner : NSObject
 
 - (BOOL) compileScript:(NSString *) str;
-
+- (void) attachBuffer:(NSMutableData *) data;
 - (void) runFrame:(NSUInteger) frame;
+
+- (void) setParams:(NSDictionary<NSString *, NSNumber *> *) params;
+
+- (void) teardown;
 
 @property (nonatomic, readonly) CGFloat avgExecutionTime;
 

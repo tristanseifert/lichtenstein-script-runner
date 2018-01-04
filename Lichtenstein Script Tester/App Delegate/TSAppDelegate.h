@@ -8,12 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface TSAppDelegate : NSObject <NSApplicationDelegate>
+@interface TSAppDelegate : NSObject <NSApplicationDelegate, NSTableViewDelegate, NSTableViewDataSource>
 
 - (IBAction) compile:(id) sender;
 
 - (IBAction) singleStep:(id) sender;
 - (IBAction) toggleRun:(id) sender;
+
+- (IBAction) addNewKey:(id) sender;
+- (IBAction) removeKey:(id) sender;
 
 @property NSUInteger frameCounter;
 

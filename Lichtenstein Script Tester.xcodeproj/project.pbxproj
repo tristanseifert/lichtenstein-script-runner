@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0A901A1FFDCBA70061C74E /* TSPropertyKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A90191FFDCBA70061C74E /* TSPropertyKeyView.m */; };
+		6A0A901D1FFDCC0E0061C74E /* TSPropertyValueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A901C1FFDCC0E0061C74E /* TSPropertyValueView.m */; };
 		6AD5FB191FFD867B0006DDF5 /* TSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB181FFD867B0006DDF5 /* TSAppDelegate.m */; };
 		6AD5FB1B1FFD867B0006DDF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5FB1A1FFD867B0006DDF5 /* Assets.xcassets */; };
 		6AD5FB1E1FFD867B0006DDF5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5FB1C1FFD867B0006DDF5 /* MainMenu.xib */; };
@@ -20,10 +22,15 @@
 		6AD5FB481FFD8F320006DDF5 /* scriptbuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB311FFD87FB0006DDF5 /* scriptbuilder.cpp */; };
 		6AD5FB491FFD8F350006DDF5 /* scriptdictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB341FFD87FB0006DDF5 /* scriptdictionary.cpp */; };
 		6AD5FB4A1FFD90740006DDF5 /* libangelscript.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD5FB2C1FFD87D10006DDF5 /* libangelscript.a */; };
+		6AD5FB4E1FFD98F50006DDF5 /* TSOutputRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB4D1FFD98F50006DDF5 /* TSOutputRenderer.mm */; };
 		A972B128EE078373932E9A32 /* libPods-Lichtenstein Script Tester.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 764DEA864638BBAADCB3920E /* libPods-Lichtenstein Script Tester.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A0A90181FFDCBA70061C74E /* TSPropertyKeyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPropertyKeyView.h; sourceTree = "<group>"; };
+		6A0A90191FFDCBA70061C74E /* TSPropertyKeyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPropertyKeyView.m; sourceTree = "<group>"; };
+		6A0A901B1FFDCC0E0061C74E /* TSPropertyValueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPropertyValueView.h; sourceTree = "<group>"; };
+		6A0A901C1FFDCC0E0061C74E /* TSPropertyValueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPropertyValueView.m; sourceTree = "<group>"; };
 		6AD5FB141FFD867B0006DDF5 /* Lichtenstein Script Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lichtenstein Script Tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD5FB171FFD867B0006DDF5 /* TSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppDelegate.h; sourceTree = "<group>"; };
 		6AD5FB181FFD867B0006DDF5 /* TSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
@@ -47,6 +54,8 @@
 		6AD5FB401FFD8D5D0006DDF5 /* Routine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Routine.cpp; sourceTree = "<group>"; };
 		6AD5FB411FFD8D5D0006DDF5 /* Routine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Routine.h; sourceTree = "<group>"; };
 		6AD5FB431FFD8EA70006DDF5 /* libglog.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglog.0.dylib; path = ../../../../usr/local/Cellar/glog/0.3.5_3/lib/libglog.0.dylib; sourceTree = "<group>"; };
+		6AD5FB4C1FFD98F50006DDF5 /* TSOutputRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSOutputRenderer.h; sourceTree = "<group>"; };
+		6AD5FB4D1FFD98F50006DDF5 /* TSOutputRenderer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TSOutputRenderer.mm; sourceTree = "<group>"; };
 		7052DC85069119CC13E7EE64 /* Pods-Lichtenstein Script Tester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lichtenstein Script Tester.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lichtenstein Script Tester/Pods-Lichtenstein Script Tester.release.xcconfig"; sourceTree = "<group>"; };
 		764DEA864638BBAADCB3920E /* libPods-Lichtenstein Script Tester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lichtenstein Script Tester.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBB488AA0D2ED2E5287C21E /* Pods-Lichtenstein Script Tester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lichtenstein Script Tester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lichtenstein Script Tester/Pods-Lichtenstein Script Tester.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +93,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6A0A90171FFDCB8F0061C74E /* Property Editor */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A90181FFDCBA70061C74E /* TSPropertyKeyView.h */,
+				6A0A90191FFDCBA70061C74E /* TSPropertyKeyView.m */,
+				6A0A901B1FFDCC0E0061C74E /* TSPropertyValueView.h */,
+				6A0A901C1FFDCC0E0061C74E /* TSPropertyValueView.m */,
+			);
+			path = "Property Editor";
+			sourceTree = "<group>";
+		};
 		6AD5FB0B1FFD867B0006DDF5 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +127,7 @@
 			children = (
 				6AD5FB281FFD86FB0006DDF5 /* Angelscript */,
 				6AD5FB381FFD8C9F0006DDF5 /* Script Runner */,
+				6AD5FB4B1FFD98E00006DDF5 /* Output Drawing */,
 				6AD5FB291FFD86FF0006DDF5 /* App Delegate */,
 				6AD5FB2A1FFD87110006DDF5 /* Resources */,
 				6AD5FB201FFD867B0006DDF5 /* main.mm */,
@@ -126,6 +147,7 @@
 		6AD5FB291FFD86FF0006DDF5 /* App Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				6A0A90171FFDCB8F0061C74E /* Property Editor */,
 				6AD5FB171FFD867B0006DDF5 /* TSAppDelegate.h */,
 				6AD5FB181FFD867B0006DDF5 /* TSAppDelegate.m */,
 			);
@@ -205,6 +227,15 @@
 			name = scriptstdstring;
 			path = angelscript/add_on/scriptstdstring;
 			sourceTree = SOURCE_ROOT;
+		};
+		6AD5FB4B1FFD98E00006DDF5 /* Output Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				6AD5FB4C1FFD98F50006DDF5 /* TSOutputRenderer.h */,
+				6AD5FB4D1FFD98F50006DDF5 /* TSOutputRenderer.mm */,
+			);
+			path = "Output Drawing";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -330,10 +361,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0A901D1FFDCC0E0061C74E /* TSPropertyValueView.m in Sources */,
+				6A0A901A1FFDCBA70061C74E /* TSPropertyKeyView.m in Sources */,
 				6AD5FB3B1FFD8CAD0006DDF5 /* TSScriptRunner.mm in Sources */,
 				6AD5FB211FFD867B0006DDF5 /* main.mm in Sources */,
 				6AD5FB421FFD8D5D0006DDF5 /* Routine.cpp in Sources */,
 				6AD5FB491FFD8F350006DDF5 /* scriptdictionary.cpp in Sources */,
+				6AD5FB4E1FFD98F50006DDF5 /* TSOutputRenderer.mm in Sources */,
 				6AD5FB451FFD8F200006DDF5 /* scriptstdstring.cpp in Sources */,
 				6AD5FB471FFD8F2F0006DDF5 /* scriptarray.cpp in Sources */,
 				6AD5FB191FFD867B0006DDF5 /* TSAppDelegate.m in Sources */,
