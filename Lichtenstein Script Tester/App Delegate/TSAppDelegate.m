@@ -13,11 +13,14 @@
 #import "TSPropertyKeyView.h"
 #import "TSPropertyValueView.h"
 
+#import "NoodleLineNumberView.h"
+
 @interface TSAppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
 
 @property IBOutlet NSTextView *codeTextView;
+@property NoodleLineNumberView *lineNumberView;
 
 @property IBOutlet NSButton *runButton;
 @property IBOutlet NSButton *singleStepButton;
@@ -80,6 +83,16 @@
 	[self didChangeValueForKey:@"properties"];
 	
 	[self.table reloadData];
+	
+	// add line number view
+	NSScrollView *scrollView = self.codeTextView.enclosingScrollView;
+	
+	self.lineNumberView = [[NoodleLineNumberView alloc] initWithScrollView:scrollView];
+	
+	scrollView.verticalRulerView = self.lineNumberView;
+	scrollView.hasHorizontalRuler = NO;
+	scrollView.hasVerticalRuler = YES;
+	scrollView.rulersVisible = YES;
 }
 
 

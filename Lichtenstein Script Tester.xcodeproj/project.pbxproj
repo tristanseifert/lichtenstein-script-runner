@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6A0A901A1FFDCBA70061C74E /* TSPropertyKeyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A90191FFDCBA70061C74E /* TSPropertyKeyView.m */; };
 		6A0A901D1FFDCC0E0061C74E /* TSPropertyValueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A901C1FFDCC0E0061C74E /* TSPropertyValueView.m */; };
+		6A4CDB211FFDD999002914C9 /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CDB1E1FFDD993002914C9 /* NoodleLineNumberMarker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A4CDB221FFDD99D002914C9 /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CDB1F1FFDD993002914C9 /* NoodleLineNumberView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6AD5FB191FFD867B0006DDF5 /* TSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5FB181FFD867B0006DDF5 /* TSAppDelegate.m */; };
 		6AD5FB1B1FFD867B0006DDF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5FB1A1FFD867B0006DDF5 /* Assets.xcassets */; };
 		6AD5FB1E1FFD867B0006DDF5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AD5FB1C1FFD867B0006DDF5 /* MainMenu.xib */; };
@@ -31,6 +33,10 @@
 		6A0A90191FFDCBA70061C74E /* TSPropertyKeyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPropertyKeyView.m; sourceTree = "<group>"; };
 		6A0A901B1FFDCC0E0061C74E /* TSPropertyValueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPropertyValueView.h; sourceTree = "<group>"; };
 		6A0A901C1FFDCC0E0061C74E /* TSPropertyValueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSPropertyValueView.m; sourceTree = "<group>"; };
+		6A4CDB1D1FFDD993002914C9 /* NoodleLineNumberMarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberMarker.h; sourceTree = "<group>"; };
+		6A4CDB1E1FFDD993002914C9 /* NoodleLineNumberMarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberMarker.m; sourceTree = "<group>"; };
+		6A4CDB1F1FFDD993002914C9 /* NoodleLineNumberView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberView.m; sourceTree = "<group>"; };
+		6A4CDB201FFDD993002914C9 /* NoodleLineNumberView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberView.h; sourceTree = "<group>"; };
 		6AD5FB141FFD867B0006DDF5 /* Lichtenstein Script Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lichtenstein Script Tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD5FB171FFD867B0006DDF5 /* TSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSAppDelegate.h; sourceTree = "<group>"; };
 		6AD5FB181FFD867B0006DDF5 /* TSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSAppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +110,17 @@
 			path = "Property Editor";
 			sourceTree = "<group>";
 		};
+		6A4CDB1C1FFDD984002914C9 /* Line Numbers */ = {
+			isa = PBXGroup;
+			children = (
+				6A4CDB1D1FFDD993002914C9 /* NoodleLineNumberMarker.h */,
+				6A4CDB1E1FFDD993002914C9 /* NoodleLineNumberMarker.m */,
+				6A4CDB201FFDD993002914C9 /* NoodleLineNumberView.h */,
+				6A4CDB1F1FFDD993002914C9 /* NoodleLineNumberView.m */,
+			);
+			path = "Line Numbers";
+			sourceTree = "<group>";
+		};
 		6AD5FB0B1FFD867B0006DDF5 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +142,7 @@
 		6AD5FB161FFD867B0006DDF5 /* Lichtenstein Script Tester */ = {
 			isa = PBXGroup;
 			children = (
+				6A4CDB1C1FFDD984002914C9 /* Line Numbers */,
 				6AD5FB281FFD86FB0006DDF5 /* Angelscript */,
 				6AD5FB381FFD8C9F0006DDF5 /* Script Runner */,
 				6AD5FB4B1FFD98E00006DDF5 /* Output Drawing */,
@@ -361,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A4CDB221FFDD99D002914C9 /* NoodleLineNumberView.m in Sources */,
 				6A0A901D1FFDCC0E0061C74E /* TSPropertyValueView.m in Sources */,
 				6A0A901A1FFDCBA70061C74E /* TSPropertyKeyView.m in Sources */,
 				6AD5FB3B1FFD8CAD0006DDF5 /* TSScriptRunner.mm in Sources */,
@@ -369,6 +388,7 @@
 				6AD5FB491FFD8F350006DDF5 /* scriptdictionary.cpp in Sources */,
 				6AD5FB4E1FFD98F50006DDF5 /* TSOutputRenderer.mm in Sources */,
 				6AD5FB451FFD8F200006DDF5 /* scriptstdstring.cpp in Sources */,
+				6A4CDB211FFDD999002914C9 /* NoodleLineNumberMarker.m in Sources */,
 				6AD5FB471FFD8F2F0006DDF5 /* scriptarray.cpp in Sources */,
 				6AD5FB191FFD867B0006DDF5 /* TSAppDelegate.m in Sources */,
 				6AD5FB481FFD8F320006DDF5 /* scriptbuilder.cpp in Sources */,
